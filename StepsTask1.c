@@ -64,9 +64,7 @@ int main() {
 
 //	output the first three lines
 	for(j=0;j<3;j++){
-		printf("Date: %s\n", file[j].date);
-		printf("Time: %s\n", file[j].time);
-		printf("Steps: %d\n", file[j].steps);
+		printf("%s/%s/%d\n", file[j].date,file[j].time,file[j].steps);
 	} 
     fclose(fp);
         
