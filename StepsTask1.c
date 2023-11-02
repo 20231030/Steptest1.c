@@ -12,7 +12,7 @@ typedef struct {
 // Define any additional variables here
 char line[500]; 
 int i=0,j=0;
-char steps[3];
+char steps[6];
 
 // This is your helper function. Do not change it in any way.
 // Inputs: character array representing a row; the delimiter character
@@ -51,7 +51,7 @@ int main() {
         return 1;  
     }
     // Convert data and store them in the struct array  
-    FITNESS_DATA file[1000];  
+    FITNESS_DATA file[5000];  
     while (fgets(line, sizeof(line), fp ) != NULL) {  
         // Parse the line  
         tokeniseRecord(line, ",", file[i].date, file[i].time, steps);  
